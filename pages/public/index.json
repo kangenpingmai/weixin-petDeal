@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "feedback": "../components/feedback"
+  }
+}

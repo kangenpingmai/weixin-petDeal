@@ -1,0 +1,30 @@
+.index-wraper view:last-child{
+  height: 88rpx;
+  display: flex;
+}
+.index-wraper > view:last-child view{
+  flex:1;
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+  font-size: 12px;
+}
+
+.index-wraper view:last-child view:first-child{
+  background: #ff9700;
+}
+.index-wraper view:last-child view:last-child{
+  background: #03bbd5;
+}
+.index-wraper view:first-child{
+  flex: 1;
+}
+.index-wraper view:first-child map {
+  width: 100%;
+  height: 100%;
+}
+.index-wraper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

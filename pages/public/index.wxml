@@ -1,0 +1,35 @@
+<view wx:if="{{!isSubmited}}">
+  <view class="row">
+    <label class="title">我的地址</label>
+    <view class="info" bindtap='chooseAddress'>{{address}}</view>
+  </view>
+  <view class="row">
+    <label class="title">类型</label>
+    <view class="info">
+      <radio-group bindchange="handleChange">
+        <label class="radio-label">
+          <radio value="buy" checked="true" /> <text>求购</text>
+          <radio value="sell" /> <text>转让</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">说明</label>
+    <view class="info">
+      <input placeholder='请填写你的具体需求' bindinput="handleMessageInput"></input>
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">联系方式</label>
+    <view class="info">
+      <input placeholder='请填写你的联系方式'bindinput="handleContactInput"></input>
+    </view>
+  </view>
+  <view class="submit-button" bindtap="submit">发布信息</view>
+</view>
+
+<feedback
+  isSubmited="{{isSubmited}}"
+  isSucc="{{isSucc}}"
+></feedback>

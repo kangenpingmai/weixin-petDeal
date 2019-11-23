@@ -1,0 +1,7 @@
+<view class="success" wx:if="{{isSubmited}}">
+  <view class="congratulation">
+    <icon type="{{isSucc ? 'success' : 'cancel'}}" color="{{isSucc ? 'green' : 'red'}}" size="24" class="success-icon"></icon>
+    {{isSucc ? '恭喜你，提交成功~' : '发生错误，请与管理员联系！'}}
+  </view>
+  <button type="{{isSucc ? 'primary' : 'warn'}}" class="backhome-button" bindtap="back">返回首页</button>
+</view>
